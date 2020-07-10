@@ -37,11 +37,37 @@
 
               De ah&iacute la enorme importancia que tiene la Revisi&oacuten T&eacutecnica Vehicular, servicio obligatorio cuyo objetivo es justamente verificar el estado general de los rodados, anticipando cualquier tipo de desperfecto y reduciendo as&iacute y de forma dr&aacutestica los accidentes viales.</p>
         </div>
+
       </div>
     <div class="col-md-6">
       <img class="img-fluid" src="<?php echo $url; ?>vistas/images/car/21.jpg" alt="">
     </div>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+  Ver Calendario
+</button>
    </div>
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3" aria-hidden="true" >
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content" style="background-color: #001D4F">
+      <div class="modal-header ">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Calendario de Verificacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <img src="<?php echo $url; ?>vistas/images/banners/calendario.png" alt="Calendario Verificacion" width="100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
    <div class="row">
         <div class="col-lg-3 col-md-6 " data-toggle="modal" data-target="#exampleModal">
 

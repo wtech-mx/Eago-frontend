@@ -10,11 +10,7 @@
 <meta name="autor" content="Web Tech" />
 <meta name="robots" content="index, follow">
 <meta http-equiv="cache-control" content="public">
-<meta property="og:url"           content="http://eago.com.mx/" />
-<meta property="og:type"          content="EAGO" />
-<meta property="og:title"         content="EAGO automotriz - administración de flotillas - gestoría - mecánica - estética automotri - subastas electrónicas" />
-<meta property="og:description"   content="Somos empresa integrada por un equipo de profesionales con más de 20 años de experiencia en el ramo automotriz, enfocando esfuerzos en la administración de flotillas, gestoría, mecánica y estética automotriz y subastas electrónicas." />
-<meta property="og:image"         content="https://eago.com.mx/Eago-frontend/vistas/images/logo-light.png" />
+
 
 	<title>Escuderia Ago</title>
 
@@ -41,7 +37,7 @@
 	<!--=====================================
 	PLUGINS DE CSS
 	======================================-->
-
+    <link rel="icon" href="<?php echo $url; ?>vistas/img/favicon.ico">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/mega-menu/mega_menu.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/owl-carousel/owl.carousel.css">
@@ -59,7 +55,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>vistas/css/style-customizer.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>vistas/css/boton-flotante.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>vistas/css/pagination.css" />
-
+<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo $url; ?><!--vistas/css/slider.css" />-->
 	<!--=====================================
 	PLUGINS DE JAVASCRIPT
 	======================================-->
@@ -125,6 +121,19 @@
      </div>
 </div>
 
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
 <?php
 
 /*=============================================
@@ -155,7 +164,7 @@ if(isset($_GET["ruta"])){
 		include "modulos/".$rutas[0].".php";
 //		include "admin/".$rutas[0].".php";
 
-	}elseif ($rutas[0] == "mantenimiento" || $rutas[0] == "estetica" || $rutas[0] == "gestoria" || $rutas[0] == "verificacion" || $rutas[0] == "traslados" || $rutas[0] == "servicios" || $rutas[0] == "subastas") {
+	}elseif ($rutas[0] == "mecanica" || $rutas[0] == "estetica" || $rutas[0] == "gestoria" || $rutas[0] == "verificacion" || $rutas[0] == "traslados" || $rutas[0] == "servicios" || $rutas[0] == "subastas") {
 		include "modulos/servicios/".$rutas[0].".php";
 	}else{
 
@@ -171,32 +180,115 @@ if(isset($_GET["ruta"])){
 }
 
 ?>
+<!--=====================================
+BOTON WHATSAPP
+======================================-->
+
+<?php
+
+    include("modulos/boton-whats.php");
+
+ ?>
+
+<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('https://eago.com.mx/eago-newpag/vistas/Service-Worker.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can install the PWA
+  showInstallPromotion();
+});
+
+</script>
+
+<script type="text/javascript">
+    window.onload = (e) => {
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+    });
+    // Show the prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice
+      .then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt = null;
+      });
+  }
+</script>
+
+<link rel="stylesheet" type="text/css" href="<?php echo $url;?>vistas/css/creame-whatsapp-me/public/css/whatsappme.minee9a.css">
+<script type="text/javascript" src="<?php echo $url;?>vistas/css/creame-whatsapp-me/public/js/whatsappme.minee9a.js"></script>
+
+
+
 
 <!--=====================================
 BOTON FLOTANTE
 ======================================-->
 
-<script type="text/javascript" style="">
-    (function () {
-        var options = {
-            facebook: "107694017316744", // Facebook page ID
-            email: "adiazm@eago.com.mx", // Email
-            sms: "5510065421", // Sms phone number
-            call: "5510065421", // Call phone number
-            company_logo_url: "http://localhost/eago-pag/images/logo-light.png", // URL of company logo (png, jpg, gif)
-            greeting_message: "", // Text of greeting message
-            call_to_action: "Cotiza ahora", // Call to action
-            wa_vb_message: "", // Message for WhatsApp
-            button_color: "#00B0B6", // Color of button
-            position: "left", // Position may be 'right' or 'left'
-            order: "facebook,whatsapp,email,sms,call" // Order of buttons
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+<!--<script type="text/javascript" style="">-->
+<!--    (function () {-->
+<!--        var options = {-->
+<!--            facebook: "107694017316744", // Facebook page ID-->
+<!--            email: "adiazm@eago.com.mx", // Email-->
+<!--            sms: "5510065421", // Sms phone number-->
+<!--            call: "5510065421", // Call phone number-->
+<!--            company_logo_url: "http://localhost/eago-pag/images/logo-light.png", // URL of company logo (png, jpg, gif)-->
+<!--            greeting_message: "", // Text of greeting message-->
+<!--            wa_vb_message: "", // Message for WhatsApp-->
+<!--            button_color: "#00B0B6", // Color of button-->
+<!--            position: "rigth", // Position may be 'right' or 'left'-->
+<!--            order: "facebook,whatsapp,email,sms,call" // Order of buttons-->
+<!--        };-->
+<!--        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;-->
+<!--        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';-->
+<!--        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };-->
+<!--        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);-->
+<!--    })();-->
+<!--</script>-->
+
+<script>
+
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '702419420548616',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v7.0'
+    });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
 </script>
+
 
  <!--=================================
  back to top -->
@@ -225,8 +317,6 @@ JAVASCRIPT PERSONALIZADO
 <!--=====================================
 https://developers.facebook.com/
 ======================================-->
-
-
 
 </body>
 </html>

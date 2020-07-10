@@ -32,7 +32,7 @@
           </li>
 
 
-            <li><a href="javascript:void(0)" style="font-size: 19px;">Pide tu servicio Aqu&iacute <i class="fa fa-angle-down fa-indicator"></i></a>
+            <li><a href="javascript:void(0)" style="font-size: 19px;">Servicios<i class="fa fa-angle-down fa-indicator"></i></a>
 
                 <div class="drop-down menu-bg grid-col-12">
 
@@ -41,24 +41,17 @@
                         <div class="grid-col-2">
                             <ul>
                               <li>
-                              <a href="mantenimiento" style="color: #000;font-size: 17px">Mantenimiento</a>
+                              <a href="mecanica" style="color: #000;font-size: 17px">Mecánica</a>
                               </li>
-                              <li > <a  href="#" style="font-size: 15px">Preventivo</a> </li>
-                              <li ><a  href="#" style="font-size: 15px">Correctivo</a></li>
-                              <li ><a  href="#" style="font-size: 15px">Llantas </a></li>
-                              <li ><a  href="#" style="font-size: 15px">Otras</a></li>
                             </ul>
                         </div>
 
                         <div class="grid-col-2">
                             <ul>
-                              <li >
-
+                              <li>
                                 <a href="estetica" style="color: #000;font-size: 17px">Estetica</a>
                               </li>
-                              <li ><a href="#" style="font-size: 15px">Interior</a></li>
-                              <li ><a href="#" style="font-size: 15px">Exterior</a></li>
-                              <li ><a href="#" style="font-size: 15px">Ambos</a></li>
+
                             </ul>
                         </div>
 
@@ -67,9 +60,6 @@
                               <li >
                                 <a href="gestoria" style="color: #000;font-size: 17px">Gestor&iacutea</a>
                               </li>
-                              <li ><a href="#" style="font-size: 15px">CDMX</a></li>
-                              <li ><a href="#" style="font-size: 15px">Morelos</a></li>
-                              <li ><a href="#" style="font-size: 15px">Edo Mex</a></li>
                             </ul>
                         </div>
 
@@ -78,9 +68,6 @@
                               <li >
                               <a href="verificacion" style="color: #000;font-size: 17px">Verificaci&oacuten</a>
                               </li>
-                              <li ><a href="#" style="font-size: 15px">CDMX</a></li>
-                              <li ><a href="#" style="font-size: 15px">Morelos</a></li>
-                              <li ><a href="#" style="font-size: 15px">Edo Mex</a></li>
                             </ul>
                         </div>
                         <div class="grid-col-2">
@@ -88,16 +75,12 @@
                             <li >
                             <a href="traslados" style="color: #000;font-size: 17px">Traslados</a>
                             </li>
-                              <li ><a href="#" style="font-size: 15px">Auto</a></li>
-                              <li ><a href="#" style="font-size: 15px">Camioneta</a></li>
-                              <li ><a href="#" style="font-size: 15px">Cami&oacuten </a></li>
-                              <li ><a href="#" style="font-size: 15px">Otros</a></li>
                             </ul>
                         </div>
                         <div class="grid-col-2">
                             <ul>
                               <li ><a href="subastas" style="color: #000;font-size: 17px">subastas</a></li>
-                              <li ><a href="https://eago.com.mx/q-subastas/?s=login"></a>Entrar</li>
+                              <li ><a href="https://eago.com.mx/q-subastas/?s=login">Entrar</a></li>
                             </ul>
                         </div>
 
@@ -112,10 +95,10 @@
               <a href="noticias" style="font-size: 19px;"> noticias </a>
             </li>
 
-             <li  data-toggle="modal" data-target=".bd-example-modal-lg">
-                <a href="#" style="font-size: 19px;">
-                  <i class="fa fa-user" ></i> Iniciar Sesi&oacuten</a>
-            </li>
+<!--             <li  data-toggle="modal" data-target=".bd-example-modal-lg">-->
+<!--                <a href="#" style="font-size: 19px;">-->
+<!--                  <i class="fa fa-user" ></i> Iniciar Sesi&oacuten</a>-->
+<!--            </li>-->
 
             <!--
             <li  data-toggle="modal" data-target=".bd-example-modal-lg2"><a href="#"><i class="fa fa-pencil"></i> Registrarse</a>

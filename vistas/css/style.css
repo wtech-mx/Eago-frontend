@@ -272,7 +272,7 @@ select { border: 1px solid #232323; color: #777; cursor: pointer; display: block
 
 /*mega-menu*/
 .mega-menu .menu-logo { padding: 36px 0px; }
-.mega-menu .menu-logo img { height: 36px; }
+.mega-menu .menu-logo img { position: relative;top: -25px;height: 64px;}
 .mega-menu .menu-links > li { line-height: 102px; }
 .mega-menu .menu-links > li > a { /*line-height: 102px*/; text-transform: uppercase; font-size: 13px; font-weight: 500; }
 .mega-menu .drop-down-multilevel.right-menu { right: 0px; }
@@ -726,7 +726,7 @@ select { border: 1px solid #232323; color: #777; cursor: pointer; display: block
 /*************************
       Back to top
 *************************/
-.car-top { width: 85px; position: fixed; bottom: -180px; right: 30px; z-index: 9999; opacity: 1; cursor: pointer; }
+.car-top { width: 40px; position: fixed; bottom: -180px; right: 30px; z-index: 9999; opacity: 1; cursor: pointer; }
 .car-top.show { bottom: 5% !important; -webkit-transition: 1.0s; -moz-transition: 1.0s; transition: 1.0s; }
 .car-top.car-run { bottom: 100% !important; -webkit-transition: 1.0s; -moz-transition: 1.0s; transition: 1.0s; }
 .car-top.car-down { -webkit-transition: 1.0s; -ms-transition: 1.0s; -o-transition: 1.0s; -moz-transition: 1.0s; transition: 1.0s; }

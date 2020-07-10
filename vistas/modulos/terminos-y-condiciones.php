@@ -1,17 +1,4 @@
 
-<body>
-
- <div id="loading">
-  <div id="loading-center">
-      <img src="images/loader.gif" alt="">
- </div>
-</div>
-
-<!--=================================
-  loading -->
-  
-
-
 <!--=================================
   Bedgrum 
 ================================= -->
@@ -170,61 +157,3 @@ terms-and-conditions  -->
 
   include("footer.php");
  ?>
- 
-<!--=================================
- footer -->
-
- <!--=================================
- color customizer --> 
- 
-<!--<div class="style-customizer closed">
-  <div class="buy-button"> <a class="opener" href="#"><i class="fa fa-cog fa-spin"></i></a>  </div>
-  <div class="clearfix content-chooser">
-     <a target="_blank" class="button" href="https://themeforest.net/item/car-dealer-the-best-car-dealer-automotive-responsive-html5-template/19226545?ref=Potenzaglobalsolutions">purchase now</a> 
-      <h3>Color Schemes</h3>
-      <p>Which theme color you want to use? Here are some predefined colors.</p>
-      <ul class="styleChange clearfix">
-        <li class="skin-default selected" title="Default" data-style="skin-default" ></li>
-        <li class="skin-blue" title="Blue" data-style="skin-blue" ></li>
-        <li class="skin-orange" title="Orange" data-style="skin-orange"></li>
-        <li class="skin-purple" title="purple" data-style="skin-purple"></li>
-        <li class="skin-gold" title="gold" data-style="skin-gold"></li>
-        <li class="skin-green" title="green" data-style="skin-green"></li>
-        <li class="skin-palatinate-blue" title="palatinate-blue" data-style="skin-palatinate-blue" ></li>
-        <li class="skin-yellow" title="Yellow" data-style="skin-yellow"></li>
-      </ul>
-      <ul class="resetAll">
-      <li><a class="button button-reset" href="#">Reset All</a></li>
-    </ul>
-  </div>
-</div>-->
- 
- <!--=================================
- color customizer --> 
-
-
- <!--=================================
- back to top -->
-
-<div class="car-top">
-  <span><img src="images/car.png" alt=""></span>
-</div>
-
- <!--=================================
- back to top -->
- 
-
-<!--=================================
- jquery -->
-
-<!-- jquery  -->
-<?php 
-  include("scripts-config.php");
- ?>
-  
-<script type="text/javascript" src="js/custom.js"></script>
-  
-</body>
-
-<!-- Mirrored from themes.potenzaglobalsolutions.com/html/cardealer/terms-and-conditions.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Oct 2019 05:02:26 GMT -->
-</html>

@@ -1,15 +1,4 @@
 
-<body>
-
-  
- <div id="loading">
-  <div id="loading-center">
-      <img src="images/loader.gif" alt="">
- </div>
-</div>
-
-
-
 <!--=================================
   Bedgrum 
 ================================= -->
@@ -150,28 +139,4 @@ terms-and-conditions  -->
  color customizer --> 
 
 
- <!--=================================
- back to top -->
-
-<div class="car-top">
-  <span><img src="images/car.png" alt=""></span>
-</div>
-
- <!--=================================
- back to top -->
- 
-
-<!--=================================
- jquery -->
-
-<!-- jquery  -->
-<?php 
-  include("scripts-config.php");
- ?>
-  
 <script type="text/javascript" src="js/custom.js"></script>
-  
-</body>
-
-<!-- Mirrored from themes.potenzaglobalsolutions.com/html/cardealer/terms-and-conditions.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Oct 2019 05:02:26 GMT -->
-</html>

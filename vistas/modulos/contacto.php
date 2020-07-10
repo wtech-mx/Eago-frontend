@@ -46,9 +46,9 @@
           <i class="fa fa-map-marker"></i>
           <h5>Address</h5>
           <p>220E Front St. Burlington NC 215</p>
-        </div>
+        </div>CONTACTANOS
       </div>-->
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3">
           <a href="tel:+5510065421">
            <div class="contact-box text-center">
               <i class="fa fa-phone"></i>
@@ -58,7 +58,7 @@
           </a>
       </div>
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-2">
          <a href="mailto:adiazm@eago.com.mx">
            <div class="contact-box text-center">
               <i class="fa fa-envelope-o"></i>
@@ -68,22 +68,32 @@
           </a>
       </div>
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-2">
           <a href="https://www.facebook.com/Escuderia-AGO-107694017316744" target="_blank">
            <div class="contact-box text-center">
               <i class="fa fa-facebook"></i>
               <h5>Facebook</h5>
-              <p>facebook.com/pg/Escuderia-AGO</p>
+              <p>Escuderia-AGO</p>
             </div>
           </a>
       </div>
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-2">
+          <a href="https://twitter.com/AgoEscuderia" target="_blank">
+           <div class="contact-box text-center">
+              <i class="fa fa-twitter"></i>
+              <h5>Twitter</h5>
+              <p>@AgoEscuderia</p>
+            </div>
+          </a>
+      </div>
+
+      <div class="col-lg-3">
           <a href="https://www.instagram.com/escuderia.ago/" target="_blank">
                <div class="contact-box text-center">
                   <i class="fa fa-instagram"></i>
                   <h5>Instagram</h5>
-                  <p>instagram.com/escuderia.ago/</p>
+                  <p>escuderia.ago</p>
                 </div>
               </div>
           </a>
@@ -246,6 +256,3 @@
  back to top -->
 
   
-</body>
-
-</html>

@@ -134,7 +134,7 @@ Design and Developed by: potenzaglobalsolutions.com
 #header .topbar-left.text-left, #header .topbar-right.text-right { text-align: center; }
 .mega-menu .menu-logo > li > a { padding: 0px;  }
 .mega-menu .menu-logo { padding: 20px 0; }
-.mega-menu .menu-logo img { height: 24px; }
+.mega-menu .menu-logo img {height: 45px;position: relative;top: -10px;}
 .mega-menu .menu-mobile-collapse-trigger { margin-top: 9px; }
 .mega-menu .menu-links { border:1px solid #e3e3e3; }
 .mega-menu .menu-links > li { line-height: 44px; }

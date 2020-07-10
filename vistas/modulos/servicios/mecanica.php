@@ -1,3 +1,8 @@
+<?php 
+  $url = Ruta::ctrRuta();
+ 
+ ?>
+
 <!--=================================
   Bedgrum 
 ================================= -->
@@ -25,58 +30,84 @@
  <!--=================================
  custom-block -->
 
-<section class="custom-block-3 white-bg page-section-ptb" >
+<section class="custom-block-3 white-bg page-section-ptb">
   <div class="container">
    <div class="row">
     <div class="col-md-6">
+
         <div class="title">
-
-          <h3>Realizamos tramites en CDMX, Edo México y Morelos</h3>
+          <h3>Contamos con servicio de valet y una red de talleres en la CDMX y Edo México</h3>
         </div>
+
         <div class="content">
-          <p>Nuestro equipo te ofrece servicios rápidos y transparentes, para que tengas la confianza de circular con tu documentación en orden y al día.
-            </p>
-            <h5>Tramites que realizamos:</h5>
-        <div class="row">
-           <div class="col-6">
+          <p>Brindamos un seguimiento personalizado, para asegurar que el mantenimiento sea con la mayor calidad, en el menor tiempo posible, a precios competitivos, ofreciendo confianza y seguridad en el buen funcionamiento del vehículo
 
-               <li>Alta de Placas</li>
-               <li>Baja de Placas</li>
-               <li>Cambio de propietario</li>
-               <li>Renovación de tarjeta de circulación</li>
-               <li>Certificación de tenencias</li>
-               <li>Permisos para circular</li>
-               <li>Alta en sistema</li>
-           </div>
-        </div>
+                <br>
+                <h5>Realizamos Servicios de:</h5>
+                <ul>
+                    <li>Mantenimiento preventivo</li>
+                    <li>Mantenimiento correctivo</li>
+                    <li>Llantas</li>
+                    <li>Baterías</li>
+                    <li>Suspensión</li>
+                </ul>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+  Ver Paquetes
+</button>
+
+           </p>
         </div>
       </div>
-    <div class="col-md-6">
-      <img class="img-fluid" src="<?php echo $url; ?>vistas/images/car/capa1-nosotros.png" alt="">
-    </div>
+
+        <div class="col-md-6">
+          <img class="img-fluid" src="<?php echo $url; ?>vistas/images/car/mecanica.jpg" alt="">
+        </div>
    </div>
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2" aria-hidden="true" >
+  <div class="modal-dialog" role="document" >
+    <div class="modal-content" style="background-color: #001D4F">
+      <div class="modal-header ">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Paquetes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <img src="<?php echo $url; ?>vistas/images/banners/paquetes.jpg" alt="Paquetes" width="100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
    <div class="row">
         <div class="col-lg-3 col-md-6 " data-toggle="modal" data-target="#exampleModal">
 
          <div class="feature-box-3">
           <div class="icon">
-            <i class="glyph-icon flaticon-beetle" style="color: #000"></i>
+            <i class="glyph-icon flaticon-beetle"></i>
           </div>
           <div class="content">
-            <h6>CDMX</h6>
+            <h6>Interior</h6>
             <p></p>
           </div>
          </div>
         </div>
 
         <div class="col-lg-3 col-md-6 " data-toggle="modal" data-target="#exampleModal">
-         <div class="feature-box-3" >
-          <div class="icon" >
+         <div class="feature-box-3">
+          <div class="icon">
             <i class="glyph-icon flaticon-interface-1"></i>
           </div>
           <div class="content" >
-            <h6>MORELOS</h6>
+            <h6>Exterior</h6>
             <p> </p>
           </div>
          </div>
@@ -86,10 +117,10 @@
 
          <div class="feature-box-3">
           <div class="icon">
-            <i class="glyph-icon flaticon-key" ></i>
+            <i class="glyph-icon flaticon-key"></i>
           </div>
           <div class="content">
-            <h6>EDO MEX</h6>
+            <h6>Ambos</h6>
             <p> </p>
           </div>
          </div>
@@ -114,17 +145,17 @@
  <!--=================================
  back to top -->
  
-
+ 
 
  
 <!--=================================
  footer -->
 <?php 
-include("footer.php");
-  include("scripts-config.php");
+  include("footer.php");
  ?>
 
- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -178,11 +209,12 @@ include("footer.php");
                 </div>
 
                 
-<button type="submit" value="Enviar" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="submit" value="Enviar" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
   enviar
 </button>
 
 </form>
+
 
 
 
@@ -201,6 +233,7 @@ if(!isset($_POST['first_name']) ||
 !isset($_POST['telephone']) ||
 !isset($_POST['serv']) ||
 !isset($_POST['zipCode'])) {
+
 
 echo "<script language='javascript'>";
 echo "alert('Ocurrió un error y el formulario no ha sido enviado')";
@@ -238,3 +271,5 @@ echo "</script>";
       </div>
     </div>
   </div>
+<!-- Modal -->
+

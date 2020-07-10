@@ -59,17 +59,6 @@
          </div>
         </div>
 
-      <div class="feature-box-2">
-          <div class="icon">
-           <i class="glyph-icon flaticon-air-conditioning"></i>
-          </div>
-          <div class="content">
-          <h5>Mecánica</h5>
-          <p>Con nuestra red de talleres, te brindamos la mejor opción para la reparación necesaria</p>
-         </div>
-        </div>
-
-
         <div class="feature-box-2">
           <div class="icon">
            <i class="glyph-icon flaticon-key"></i>

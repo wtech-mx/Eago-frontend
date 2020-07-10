@@ -10,13 +10,13 @@
           </li>
 
           <li class="text-white">
-              <a class="twitter" href="#" target="blank">twitter
+              <a class="twitter" href="https://twitter.com/AgoEscuderia" target="blank">twitter
                   <i class="fa fa-twitter text-white" ></i> </a>
           </li>
 
           <li class="text-white">
               <a class="pinterest" href="https://www.instagram.com/escuderia.ago/" target="blank">instagram
-                  <i class="fa fa-instagram"></i> </a>
+                  <i class="fa fa-instagram text-white"></i> </a>
           </li>
         </ul>
        </div>
