@@ -1,0 +1,13 @@
+# Impedir que se pueda ver el listado de contenidos de un directorio
+
+Options All -Indexes
+
+# Url Amigables
+
+RewriteEngine On
+
+RewriteRule ^([-a-zA-Z0-9ñÑ_/]+)$ index.php?ruta=$1
+
+<FilesMatch "\.(css|js|ico|pdf|jpg|jpeg|png|gif|php|woff|ttf)$">
+SetOutputFilter DEFLATE
+</FilesMatch>

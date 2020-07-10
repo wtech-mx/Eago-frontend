@@ -1,0 +1,98 @@
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#ff9100;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  z-index:1000;
+  animation: bot-to-top 2s ease-out;
+}
+
+.btn-ul{
+  position:fixed;
+  left:40px;
+  padding-bottom:20px;
+  bottom:80px;
+  z-index:100;
+}
+
+.btn-li{
+  list-style:none;
+  margin-bottom:10px;
+}
+
+.btn-a{
+  background-color:#F33;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  width:60px;
+  height:60px;
+  display:block;
+}
+
+.telefono{
+  background-color:#2196f3;
+}
+
+.whats{
+  background-color:#25D366;
+}
+
+.correo{
+  background-color:#6a1b9a;
+}
+
+.btn-ul:hover{
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+
+.my-float{
+  font-size:28px;
+  margin-top:18px;
+}
+
+.btn-share#menu-share + .btn-ul{
+  visibility: hidden;
+}
+
+.btn-share#menu-share:hover + .btn-ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.btn-share#menu-share .btn-li{
+  animation: rotate-in 0.5s;
+}
+
+.btn-share#menu-share:hover > .btn-li{
+  animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
