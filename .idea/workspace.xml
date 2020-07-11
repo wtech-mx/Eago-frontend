@@ -20,34 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67f7e5f6-b048-4347-9f5f-c988eb6a0ba1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/admin_index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/admin_index.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/buscar.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/buscar.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/editar.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/editar.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/estilos-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/estilos-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/estilos.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/estilos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/login.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/modal-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/modal-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/nuevo.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/nuevo.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/single.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/single.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/slide-nuevo.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/slide-nuevo.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/slide.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/slide.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/slide.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/slide.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vistas/css/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin/db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vistas/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/aviso-de-privacidad.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/aviso-de-privacidad.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/cabezote.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/cabezote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/contacto.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/contacto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/servicios-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/servicios-index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/servicios/gestoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/servicios/gestoria.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/servicios/verificacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/servicios/verificacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/terminos-y-condiciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/terminos-y-condiciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/tips.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/tips.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/images/banners/calendario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/modulos/pruebas.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/pruebas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/modulos/slide.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/slide.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vistas/plantilla.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/plantilla.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -107,7 +86,8 @@
       <workItem from="1594322041433" duration="4333000" />
       <workItem from="1594352458240" duration="1369000" />
       <workItem from="1594383547162" duration="1611000" />
-      <workItem from="1594413705713" duration="3886000" />
+      <workItem from="1594413705713" duration="2846000" />
+      <workItem from="1594484642993" duration="1689000" />
     </task>
     <servers />
   </component>
@@ -115,15 +95,7 @@
     <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2930" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594151099380">
@@ -134,14 +106,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="2879" y="274" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.0.2560.1080/0.0.2560.1080@2560.0.2560.1080" timestamp="1594229292201" />
-    <state x="3570" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594423720369">
+    <state x="2979" y="295" key="FileChooserDialogImpl" timestamp="1594444259253">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3570" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2560.0.2560.1080/0.0.2560.1080@2560.0.2560.1080" timestamp="1594423720369" />
-    <state x="2979" y="295" key="FileChooserDialogImpl" timestamp="1594389681708">
-      <screen x="2560" y="0" width="2560" height="1080" />
-    </state>
-    <state x="2979" y="295" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1080@2560.0.2560.1080" timestamp="1594389681708" />
+    <state x="2979" y="295" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1080@2560.0.2560.1080" timestamp="1594444259253" />
     <state x="2693" y="184" key="SettingsEditor" timestamp="1594414192184">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -154,9 +122,9 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3496" y="250" key="run.anything.popup/2560.0.2560.1080/0.0.2560.1080@2560.0.2560.1080" timestamp="1594352497072" />
-    <state x="2862" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1594322991442">
+    <state x="2862" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1594443917881">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="2862" y="239" width="672" height="678" key="search.everywhere.popup/2560.0.2560.1080/0.0.2560.1080@2560.0.2560.1080" timestamp="1594322991442" />
+    <state x="2862" y="239" width="672" height="678" key="search.everywhere.popup/2560.0.2560.1080/0.0.2560.1080@2560.0.2560.1080" timestamp="1594443917881" />
   </component>
 </project>

@@ -55,7 +55,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>vistas/css/style-customizer.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>vistas/css/boton-flotante.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>vistas/css/pagination.css" />
-<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo $url; ?><!--vistas/css/slider.css" />-->
+    <link rel="stylesheet" type="text/css" href="<?php echo $url; ?>vistas/css/slider.css" />
 	<!--=====================================
 	PLUGINS DE JAVASCRIPT
 	======================================-->

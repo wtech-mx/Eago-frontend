@@ -48,141 +48,58 @@
     </div>
   </div>
   <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-<!--slide end-->
-
-<section class="latest-blog border masonry-main page-section-ptb" style="background-color: #051546;">
- <div class="container">
-
-   <div class="row">
-    <div class="col-md-12">
-          <form action="<?php echo $url; ?>blog/buscar.php" method="get" name="busqueda" class="buscar">
-            <div class="sidebar-widget ">
-              <h2 style="color:#fff;">Buscar</h2>
 
 
-              <div class="widget-search p-5">
-                  <!--<i class="fa fa-search"></i>-->
-                  <input type="search" class="form-control placeholder " name="busqueda" placeholder="Buscar...." style="color:#fff;">
-              </div>
+---------------------------
 
-            </div>
-          </form>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <div class="row-fluid">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+				<?php
+					$sql_slider=mysqli_query($con,"select * from slider where estado=1 order by orden");
+					$nums_slides=mysqli_num_rows($sql_slider);
+				?>
+					<ol class="carousel-indicators">
+						<?php
+						for ($i=0; $i<$nums_slides; $i++){
+							$active="active";
+							?>
+							<li data-target="#carousel-example-captions" data-slide-to="<?php echo $i;?>" class="<?php echo $active;?>"></li>
+							<?php
+							$active="";
+						}
+						?>
 
-       <div class="paginador p-3">
-       	<h4 style="color:#fff;"><?php echo $titulo; ?></h4>
-       </div>
+					</ol>
+				<div class="carousel-inner" role="listbox">
+				<?php
+					$active="active";
+					while ($rw_slider=mysqli_fetch_array($sql_slider)){
+				?>
+						<div class="item <?php echo $active;?>">
+							<img  alt="  <?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" src=" <?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" data-holder-rendered="true">
+							<div class="carousel-caption">
+								<h3><?php echo $rw_slider['titulo'];?></h3>
+								<p><?php echo $rw_slider['descripcion'];?></p>
+								<a class='btn btn-<?php echo $rw_slider['estilo_boton'];?> text-right' href="<?php echo $rw_slider['url_boton'];?>"><?php echo $rw_slider['texto_boton'];?></a>
+							</div>
+						</div>
+						<?php
+						$active="";
+					}
+				?>
 
-     <div class="masonry columns-2">
-       <div class="grid-sizer"></div>
-      <?php foreach($resultados as $post): ?>
-         <div class="masonry-item clearfix">
-          <div class="blog-2">
-          <div class="blog-image">
-            <a href="single.php?id=<?php echo $post['id']; ?>">
-
-                <img class="img-fluid" src="<?php echo $urlServidor; ?>imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
-            </a>
-              <div class="date">
-                <span><?php echo fecha($post['fecha']); ?></span>
-              </div>
-          </div>
-            <div class="blog-content">
-              <div class="blog-admin-main">
-               <div class="blog-admin">
-                <h4  class="font-weight-bold"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['titulo'] ?></a></h4>
-               </div>
-               <div class="blog-meta float-right">
-                 <ul>
-                   <li class="share"><a href="#"> <i class="fa fa-share-alt"></i><br /> ...</a>
-                    <div class="blog-social">
-                     <ul class="list-style-none">
-                      <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                      <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                      <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                      <li> <a href="#"><i class="fa fa-pinterest-p"></i></a> </li>
-                     </ul>
-                     </div>
-                   </li>
-                 </ul>
-               </div>
-              </div>
-              <div class="blog-description text-center">
-                <p class="extracto style="color:#fff;""><?php echo $post['extracto'] ?></p>
-                 <div class="separator"></div>
-                 <span style="color:#fff;"><a href="single.php?id=<?php echo $post['id']; ?>" class="continuar">Continuar Leyendo</a></span>
-              </div>
-            </div>
-          </div>
+				</div>
+				<a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+				<a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+			</div>
         </div>
-       <?php endforeach; ?>
+    </div>
 
-</section>
-------------------------------------
-
-<section class="latest-blog border masonry-main page-section-ptb" style="background-color: #051546;">
- <div class="container">
-
-   <div class="row">
-    <div class="col-md-12">
-          <form action="<?php echo $url; ?>blog/buscar.php" method="get" name="busqueda" class="buscar">
-            <div class="sidebar-widget ">
-              <h2 style="color:#fff;">Buscar</h2>
-
-
-              <div class="widget-search p-5">
-                  <!--<i class="fa fa-search"></i>-->
-                  <input type="search" class="form-control placeholder " name="busqueda" placeholder="Buscar...." style="color:#fff;">
-              </div>
-
-            </div>
-          </form>
-
-       <div class="paginador p-3">
-       	<h4 style="color:#fff;"><?php echo $titulo; ?></h4>
-       </div>
-
-     <div class="masonry columns-2">
-       <div class="grid-sizer"></div>
-      <?php foreach($resultados as $post): ?>
-         <div class="masonry-item clearfix">
-          <div class="blog-2">
-          <div class="blog-image">
-            <a href="single.php?id=<?php echo $post['id']; ?>">
-
-                <img class="img-fluid" src="<?php echo $urlServidor; ?>imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
-            </a>
-              <div class="date">
-                <span><?php echo fecha($post['fecha']); ?></span>
-              </div>
-          </div>
-            <div class="blog-content">
-              <div class="blog-admin-main">
-               <div class="blog-admin">
-                <h4  class="font-weight-bold"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['titulo'] ?></a></h4>
-               </div>
-               <div class="blog-meta float-right">
-                 <ul>
-                   <li class="share"><a href="#"> <i class="fa fa-share-alt"></i><br /> ...</a>
-                    <div class="blog-social">
-                     <ul class="list-style-none">
-                      <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                      <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                      <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                      <li> <a href="#"><i class="fa fa-pinterest-p"></i></a> </li>
-                     </ul>
-                     </div>
-                   </li>
-                 </ul>
-               </div>
-              </div>
-              <div class="blog-description text-center">
-                <p class="extracto style="color:#fff;""><?php echo $post['extracto'] ?></p>
-                 <div class="separator"></div>
-                 <span style="color:#fff;"><a href="single.php?id=<?php echo $post['id']; ?>" class="continuar">Continuar Leyendo</a></span>
-              </div>
-            </div>
-          </div>
-        </div>
-       <?php endforeach; ?>
-
-</section>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

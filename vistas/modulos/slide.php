@@ -1,48 +1,63 @@
-<div class="slide-res container-fluid" >
-    <div class="row">
-        <div class="col-fluid">
-        <?php if(count($images)>0):?>
-        <!-- aqui insertaremos el slider -->
-            <div id="pricipal-carousel" class="carousel slide" data-ride="carousel" style="margin-top: 110px;">
-              <!-- Indicatodores -->
-              <ol class="carousel-indicators">
-              <?php $cnt=0; foreach($images as $img):?>
-                <li data-target="#pricipal-carousel" data-slide-to="0" class="<?php if($cnt==0){ echo 'active'; }?>">
-                </li>
-              <?php $cnt++; endforeach; ?>
-              </ol>
-              <!-- Contenedor de las imagenes -->
-              <div class="carousel-inner">
-                <?php $cnt=0; foreach($images as $img):?>
-                <div class="carousel-item <?php if($cnt==0){ echo 'active'; }?>">
-                  <div class="carousel-caption d-block text-right">
-                    <h4 style="color: #fff;"><?php echo $img->title; ?></h4>
-                    <p>
-                    </p>
-                      <button class="botton-res btn btn-light btn-sm" data-toggle="modal" data-target="#exampleModal" type="button"><a  target="blank" href="<?php echo $img->boton; ?>" title="<?php echo $img->boton; ?>">Ver mas</a></button>
+<?php
+$active="active";
+$DB_HOST="localhost";//Servidor donde se encuentra alojada nuestra base de datos
+$DB_NAME= "taller_eago";// Nombre de la base de datos
+$DB_USER= "root";//Usuario de la base de datos
+$DB_PASS= "";//Contraseña del usuario de la base de datos
+	# conectare la base de datos
+    $con=@mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+    if(!$con){
+        die("imposible conectarse: ".mysqli_error($con));
+    }
+    if (@mysqli_connect_errno()) {
+        die("Connect failed: ".mysqli_connect_errno()." : ". mysqli_connect_error());
+    }
+?>
+
+<div id="myCarousel" class="carousel sl slide carousel-fade" data-ride="carousel" style="">
+				<?php
+					$sql_slider=mysqli_query($con,"select * from slider where estado=1 order by orden");
+					$nums_slides=mysqli_num_rows($sql_slider);
+				?>
+				<?php
+					$active="active";
+					while ($rw_slider=mysqli_fetch_array($sql_slider)){
+				?>
+
+
+
+                <div  class="carousel-item <?php echo $active;?>" style="background-color:<?php echo $rw_slider['color'];?>">
+                  <div class="mask flex-center">
+                    <div class="container" style="margin-top:8%;">
+                      <div class="row align-items-center">
+                        <div class="col-md-7 col-12 order-md-1 order-2">
+                          <h4><?php echo $rw_slider['titulo'];?></h4>
+                          <p><?php echo $rw_slider['descripcion'];?></p>
+                          <a class='btn btn-<?php echo $rw_slider['estilo_boton'];?> text-right' href="<?php echo $rw_slider['url_boton'];?>"><?php echo $rw_slider['texto_boton'];?></a>
+                        </div>
+
+                        <div class="col-md-5 col-12 order-md-2 order-1">
+                            <img class="mx-auto"  alt="<?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" src=" <?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" data-holder-rendered="true">
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <!-- <img class="img-fluid" src="</?php echo 'admin/'.$img->folder.$img->src; ?>" alt="">-->
-                  <img class="img-fluid" src="<?php echo $urlServidor.'admin/'.$img->folder.$img->src; ?>" alt="<?php echo $urlServidor.'admin/'.$img->folder.$img->src; ?>">
                 </div>
-              <?php $cnt++; endforeach; ?>
 
-                <a href="#pricipal-carousel" class="carousel-control-prev" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Anterior</span>
-                </a>
+    						<?php
+						$active="";
+					}
+				?>
 
-                <a href="#pricipal-carousel" class="carousel-control-next" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Siguiente</span>
-                </a>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+  </a>
 
-              </div>
-            </div>
-          <?php else:?>
-             <h4 class="alert alert-warning">No hay imagenes</h4>
-          <?php endif; ?>
-        </div>
-    </div>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
 </div>
-
 

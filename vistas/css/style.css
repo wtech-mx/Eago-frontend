@@ -260,7 +260,7 @@ select { border: 1px solid #232323; color: #777; cursor: pointer; display: block
 /*************************
     Header
 *************************/
-#header.defualt { background: transparent; z-index: 999; padding: 0px; margin: 0px; position: absolute; width: 100%; }
+#header.defualt { background: transparent; z-index: 999; padding: 0px; margin: 0px; position: relative; width: 100%; }
 
 /*topbar*/
 .topbar { border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding: 10px 0px; font-family: 'Roboto', sans-serif; }

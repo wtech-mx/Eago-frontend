@@ -39,4 +39,5 @@ function del($id){
 	$con->query("delete from slide where id=$id");
 }
 
+
 ?>
