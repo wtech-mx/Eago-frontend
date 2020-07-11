@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67f7e5f6-b048-4347-9f5f-c988eb6a0ba1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vistas/css/slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/images/banners/calendario.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/pruebas.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/pruebas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vistas/modulos/slide.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/slide.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/plantilla.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/plantilla.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
       <workItem from="1594352458240" duration="1369000" />
       <workItem from="1594383547162" duration="1611000" />
       <workItem from="1594413705713" duration="2846000" />
-      <workItem from="1594484642993" duration="1689000" />
+      <workItem from="1594484642993" duration="2083000" />
     </task>
     <servers />
   </component>

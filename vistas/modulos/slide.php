@@ -28,16 +28,16 @@ $DB_PASS= "";//Contraseña del usuario de la base de datos
 
                 <div  class="carousel-item <?php echo $active;?>" style="background-color:<?php echo $rw_slider['color'];?>">
                   <div class="mask flex-center">
-                    <div class="container" style="margin-top:8%;">
+                    <div class="container" style="margin-top:9%;">
                       <div class="row align-items-center">
                         <div class="col-md-7 col-12 order-md-1 order-2">
-                          <h4><?php echo $rw_slider['titulo'];?></h4>
-                          <p><?php echo $rw_slider['descripcion'];?></p>
-                          <a class='btn btn-<?php echo $rw_slider['estilo_boton'];?> text-right' href="<?php echo $rw_slider['url_boton'];?>"><?php echo $rw_slider['texto_boton'];?></a>
+                          <h4 class="ml-5"><?php echo $rw_slider['titulo'];?></h4>
+                          <p class="ml-5"><?php echo $rw_slider['descripcion'];?></p>
+                          <a class='ml-5 btn btn-<?php echo $rw_slider['estilo_boton'];?> text-right' href="<?php echo $rw_slider['url_boton'];?>"><?php echo $rw_slider['texto_boton'];?></a>
                         </div>
 
                         <div class="col-md-5 col-12 order-md-2 order-1">
-                            <img class="mx-auto"  alt="<?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" src=" <?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" data-holder-rendered="true">
+                            <img class="mr-5 mx-auto"  alt="<?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" src=" <?php echo $urlServidor;?>view/img/slider/<?php echo $rw_slider['url_image'];?>" data-holder-rendered="true">
                         </div>
                       </div>
                     </div>
